@@ -4,11 +4,27 @@
     "next/core-web-vitals"
   ],
   "rules": {
-    "camelcase": [
+    "@typescript-eslint/naming-convention": [
       "error",
       {
-        "allow": [
-          "aa_bb"
+        "selector": "variable",
+        "format": [
+          "camelCase",
+          "snake_case"
+        ]
+      },
+      {
+        "selector": "function",
+        "format": [
+          "camelCase",
+          "snake_case"
+        ]
+      },
+      {
+        "selector": "property",
+        "format": [
+          "camelCase",
+          "snake_case"
         ]
       }
     ]
